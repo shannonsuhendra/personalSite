@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5 {
 
 p {
   color: #8f8f8f;
+  font-size: 1.2rem;
 }
 
 /* Headings */
@@ -22,7 +23,7 @@ p {
 }
 
 .desc-heading {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 /* Containers */
 
@@ -37,7 +38,7 @@ p {
     text-align: center;
   }
   .hamburger {
-    font-size: 30px;
+    font-size: 2.5rem;
     cursor: pointer;
     align-items: right;
   }
@@ -126,7 +127,7 @@ footer {
   width: 100%;
 }
 
-p.copyright {
+.copyright {
     position: absolute;
     width: 100%;
     line-height: 40px;
