@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
   text-align: center;
   background-color: #E4F9F5;
   color: #66BFBF;
@@ -25,6 +25,7 @@ p {
 .desc-heading {
   font-size: 1.3rem;
 }
+
 /* Containers */
 
 .container-fluid {
@@ -42,6 +43,10 @@ p {
     cursor: pointer;
     align-items: right;
   }
+
+  .hamburger-hm {
+    color: #ffff;
+  }
 }
 
 @media only screen and (min-width: 992px){
@@ -51,6 +56,15 @@ p {
 }
 
 /* Navigation Bar */
+#home.active{
+  color: #ffff;
+}
+
+#about.active,
+#projects.active,
+#food.active {
+  color: #66BFBF;
+}
 
 .navbar {
   padding: 0 0 1rem;
@@ -70,13 +84,37 @@ p {
   padding: 0 18px;
 }
 
+.nav-home .nav-link {
+  color: #C8E7E8;
+}
+
+.nav-home .nav-link:hover {
+  color: #ffffff;
+}
+
 .nav-link {
   font-size: 1.1rem;
-  color: #66BFBF;
+  color: #8f8f8f;
 }
 
 .nav-link:hover {
-  color: #2cabae;
+  color: #66BFBF;
+}
+
+/* Home */
+.name {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-top: 1.5rem;
+}
+
+.desc {
+  color: 	#C8E7E8;
+  font-weight: bold;
+}
+
+.intro {
+  margin: 12% 0;
 }
 
 /* About Me */
@@ -93,6 +131,13 @@ p {
   padding-top: 15px;
 }
 
+body#bg-img {
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 /* Projects */
 .projects_img {
   width: 100%;
@@ -100,11 +145,12 @@ p {
 }
 
 a {
-  color: #8f8f8f;
+  color: #C8E7E8;
+  margin-right: 30px;
 }
 
 a:hover {
-  color: #66BFBF;
+  color: #ffff;
   background-color: transparent;
   text-decoration: none;
 }
@@ -121,19 +167,39 @@ a:hover {
 
 /* Footer */
 
-footer {
+#page-container {
   position: relative;
-  height: 300px;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  height: 2.5rem;            /* Footer height */
 }
 
 .copyright {
-    position: absolute;
-    width: 100%;
     line-height: 40px;
     font-size: 0.7em;
     text-align: center;
-    bottom:0;
+    bottom: 0;
+}
+
+.copyright-hm {
+    color: #ffff;
+}
+
+#overlay-home.overlay-active,
+#overlay-about.overlay-active,
+#overlay-projects.overlay-active,
+#overlay-food.overlay-active
+{
+  color: #66BFBF;
 }
 
 .overlay {

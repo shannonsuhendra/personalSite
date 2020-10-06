@@ -20,84 +20,62 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="bg-img">
+
     <div id="page-container">
       <div id="content-wrap" class="container-fluid">
         <!-- Nav Bar -->
         <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
-            <a id="overlay-home" href="home.html">Home</a>
+            <a id="overlay-home" class="overlay-active" href="home.html">Home</a>
             <a id="overlay-about" href="index.html">About Me</a>
             <a id="overlay-projects" href="projects.html">Projects</a>
-            <a id="overlay-food" class="overlay-active" href="food.html">Food :)</a>
+            <a id="overlay-food" href="food.html">Food :)</a>
           </div>
         </div>
         <nav class="navbar navbar-expand-lg">
           <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> -->
-          <span class="hamburger ml-auto" onclick="openNav()">&#9776;</span>
+          <span class="hamburger hamburger-hm ml-auto" onclick="openNav()">&#9776;</span>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a id="home" class="nav-link" href="home.html">Home</a>
+              <li class="nav-item nav-home">
+                <a id="home" class="nav-link active" href="home.html">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item nav-home">
                 <a id="about" class="nav-link" href="index.html">About Me</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item nav-home">
                 <a id="projects" class="nav-link" href="projects.html">Projects</a>
               </li>
-              <li class="nav-item">
-                <a id="food" class="nav-link active" href="food.html">Food :D</a>
+              <li class="nav-item nav-home">
+                <a id="food" class="nav-link" href="food.html">Food :D</a>
               </li>
             </ul>
           </div>
         </nav>
 
-        <!-- Food -->
-        <h1 class="big-heading">Food</h1>
-        <h6 class="desc-heading">From taking out 24/7 to learning how to cook all these over quarantine!</h6>
-        <div class="row justify-content-center justify-content-md-start">
-          <div class="col-lg-4 col-md-6">
-            <img class="food_img" src="images/sundubu.jpg" alt="Sundubu Jjigae">
-            <p class="food_name">Sundubu Jjigae</p>
+        <!-- Intro -->
+        <div class="row intro">
+          <div class="col-lg-4">
+            <img class="bio_img" src="images/shannon.jpeg" alt="profile picture">
           </div>
-          <div class="col-lg-4 col-md-6">
-            <img class="food_img" src="images/pasta.jpg" alt="Truffle Angel Hair Pasta">
-            <p class="food_name">Truffle Angel Hair Pasta</p>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <img class="food_img" src="images/sushiBurrito.jpg" alt="Sushi Burrito">
-            <p class="food_name">Suhsi Burrito</p>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <img class="food_img" src="images/salmonDon.jpg" alt="Salmon Mentai Don">
-            <p class="food_name">Salmon Mentai Don</p>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <img class="food_img" src="images/sushiRoll.jpg" alt="Sushi Rolls">
-            <p class="food_name">Suhsi Rolls</p>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <img class="food_img" src="images/kimchiPorridge.jpg" alt="Kimchi Porridge">
-            <p class="food_name">Kimchi Porridge</p>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <img class="food_img" src="images/porkPorridge.jpg" alt="Pork Porridge">
-            <p class="food_name">Pork Porridge</p>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <img class="food_img" src="images/beefBowl.jpg" alt="Beef Bowl">
-            <p class="food_name">Beef Bowl</p>
+          <div class="col-lg-8">
+            <h1 class="name">Shannon Suhendra</h1>
+            <p class="desc">Programmer, Web Developer, Friend, and wannabe Cook</p>
+            <a href="https://www.linkedin.com/in/shannon-suhendra-66633a1a2/" target="_blank" class="fab fa-linkedin fa-2x"></a>
+            <a href="https://www.facebook.com/shannon.suhendra.54/" target="_blank" class="fab fa-facebook-square fa-2x"></a>
+            <a href="https://github.com/shannonsuhendra" target="_blank" class="fab fa-github-square fa-2x"></a>
           </div>
         </div>
       </div>
 
       <!-- Footer -->
+
       <footer id="footer">
-          <p class="copyright">Copyright © 2020</p>
+          <p class="copyright copyright-hm">Copyright © 2020</p>
       </footer>
     </div>
 

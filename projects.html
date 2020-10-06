@@ -6,7 +6,7 @@
   <title>Shannon's Personal Site</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -22,98 +22,98 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div id="page-container">
+      <div id="content-wrap" class="container-fluid">
 
-      <!-- Nav Bar -->
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="index.html">About Me</a>
-          <a href="projects.html">Projects</a>
-          <a href="food.html">Food :)</a>
+        <!-- Nav Bar -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a id="overlay-home" href="home.html">Home</a>
+            <a id="overlay-about" href="index.html">About Me</a>
+            <a id="overlay-projects" class="overlay-active" href="projects.html">Projects</a>
+            <a id="overlay-food" href="food.html">Food :)</a>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <span class="hamburger ml-auto" onclick="openNav()">&#9776;</span>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a id="home" class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="about" class="nav-link" href="index.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a id="projects" class="nav-link active" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a id="food" class="nav-link" href="food.html">Food :D</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Projects -->
+        <h1 class="big-heading">My Projects</h1>
+        <h6 class="desc-heading">Checkout my projects!</h6>
+        <div class="row justify-content-center justify-content-md-start">
+          <div class="col-lg-6 col-md-12">
+            <div class="card mb-3">
+              <img class="projects_img" src="images/twitterClone.png" alt="Twitter Clone">
+              <div class="card-body">
+                <h5 class="card-title">Twitter Clone</h5>
+                <h6 class="card-text">Django, Tensorflow, Keras, HTML</h6>
+                <p class="card-text">Twitter Clone that generates automatic replies for a user's tweets based on past replies</p>
+                <a href="https://github.com/shannonsuhendra" target="_blank" class="fab fa-github-square fa-2x"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="card mb-3">
+              <img class="projects_img" src="images/bloodDonorProject.png" alt="Blood Donor Project">
+              <div class="card-body">
+                <h5 class="card-title">Liquid Life Indo</h5>
+                <h6 class="card-text">React Native, JSON</h6>
+                <p class="card-text">Informative mobile application to encourage blood donations</p>
+                <a href="https://github.com/shannonsuhendra/BloodDonorProject" target="_blank" class="fab fa-github-square fa-2x"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="card mb-3">
+              <img class="projects_img" src="images/brickBreaker.png" alt="Brick Breaker Game">
+              <div class="card-body">
+                <h5 class="card-title">Brick Breaker</h5>
+                <h6 class="card-text">Java</h6>
+                <p class="card-text">Brick Breaker game for final project of CIS120</p>
+                <a href="https://github.com/shannonsuhendra" target="_blank" class="fab fa-github-square fa-2x"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="card mb-3">
+              <img class="projects_img" src="images/typingGame.png" alt="Typing Game">
+              <div class="card-body">
+                <h5 class="card-title">Typer</h5>
+                <h6 class="card-text">Python</h6>
+                <p class="card-text">Typing game for final project of Engineering Summer Academy at Penn</p>
+                <a href="https://github.com/shannonsuhendra/ESAP-TypingGame" target="_blank" class="fab fa-github-square fa-2x"></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg">
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <span class="hamburger ml-auto" onclick="openNav()">&#9776;</span>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="food.html">Food :D</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- Projects -->
-      <h1 class="big-heading">My Projects</h1>
-      <h6 class="desc-heading">Checkout my projects!</h6>
-      <div class="row justify-content-center justify-content-md-start">
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-3">
-            <img class="projects_img" src="images/twitterClone.png" alt="Twitter Clone">
-            <div class="card-body">
-              <h5 class="card-title">Twitter Clone</h5>
-              <h6 class="card-text">Django, Tensorflow, Keras, HTML</h6>
-              <p class="card-text">Twitter Clone that generates automatic replies for a user's tweets based on past replies</p>
-              <a href="https://github.com/shannonsuhendra" target="_blank" class="fab fa-github-square fa-2x"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-3">
-            <img class="projects_img" src="images/bloodDonorProject.png" alt="Blood Donor Project">
-            <div class="card-body">
-              <h5 class="card-title">Liquid Life Indo</h5>
-              <h6 class="card-text">React Native, JSON</h6>
-              <p class="card-text">Informative mobile application to encourage blood donations</p>
-              <a href="https://github.com/shannonsuhendra/BloodDonorProject" target="_blank" class="fab fa-github-square fa-2x"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-3">
-            <img class="projects_img" src="images/brickBreaker.png" alt="Brick Breaker Game">
-            <div class="card-body">
-              <h5 class="card-title">Brick Breaker</h5>
-              <h6 class="card-text">Java</h6>
-              <p class="card-text">Brick Breaker game for final project of CIS120</p>
-              <a href="https://github.com/shannonsuhendra" target="_blank" class="fab fa-github-square fa-2x"></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card mb-3">
-            <img class="projects_img" src="images/typingGame.png" alt="Typing Game">
-            <div class="card-body">
-              <h5 class="card-title">Typer</h5>
-              <h6 class="card-text">Python</h6>
-              <p class="card-text">Typing game for final project of Engineering Summer Academy at Penn</p>
-              <a href="https://github.com/shannonsuhendra/ESAP-TypingGame" target="_blank" class="fab fa-github-square fa-2x"></a>
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      <!-- Footer -->
+      <footer id="footer">
+          <p class="copyright">Copyright © 2020</p>
+      </footer>
     </div>
-
-  <!-- Footer -->
-
-  <footer id="footer">
-
-      <!-- <i class="social-icon fab fa-twitter"></i>
-      <i class="social-icon fab fa-facebook-f"></i>
-      <i class="social-icon fab fa-instagram"></i>
-      <i class="social-icon fas fa-envelope"></i> -->
-      <p class="copyright">Copyright © 2020</p>
-  </footer>
 
   <script src="js/index.js" charset="utf-8"></script>
 </body>
