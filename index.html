@@ -20,63 +20,64 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="bg-img">
 
-    <div class="container-fluid">
+    <div id="page-container">
+      <div id="content-wrap" class="container-fluid">
+        <!-- Nav Bar -->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a id="overlay-home" class="overlay-active" href="index.html">Home</a>
+            <a id="overlay-about" href="about.html">About Me</a>
+            <a id="overlay-projects" href="projects.html">Projects</a>
+            <a id="overlay-food" href="food.html">Food :)</a>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <span class="hamburger hamburger-hm ml-auto" onclick="openNav()">&#9776;</span>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item nav-home">
+                <a id="home" class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item nav-home">
+                <a id="about" class="nav-link" href="about.html">About Me</a>
+              </li>
+              <li class="nav-item nav-home">
+                <a id="projects" class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item nav-home">
+                <a id="food" class="nav-link" href="food.html">Food :D</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-      <!-- Nav Bar -->
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a id="overlay-home" href="home.html">Home</a>
-          <a id="overlay-about" class="overlay-active" href="index.html">About Me</a>
-          <a id="overlay-projects" href="projects.html">Projects</a>
-          <a id="overlay-food" href="food.html">Food :)</a>
+        <!-- Intro -->
+        <div class="row intro">
+          <div class="col-lg-4">
+            <img class="bio_img" src="images/shannon.jpeg" alt="profile picture">
+          </div>
+          <div class="col-lg-8">
+            <h1 class="name">Shannon Suhendra</h1>
+            <p class="desc">Programmer, Web Developer, Friend, and wannabe Cook</p>
+            <a href="https://www.linkedin.com/in/shannon-suhendra-66633a1a2/" target="_blank" class="fab fa-linkedin fa-2x"></a>
+            <a href="https://www.facebook.com/shannon.suhendra.54/" target="_blank" class="fab fa-facebook-square fa-2x"></a>
+            <a href="https://github.com/shannonsuhendra" target="_blank" class="fab fa-github-square fa-2x"></a>
+          </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg">
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <span class="hamburger ml-auto" onclick="openNav()">&#9776;</span>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a id="home" class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a id="about" class="nav-link active" href="index.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a id="projects" class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a id="food" class="nav-link" href="food.html">Food :D</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
-      <!-- Title -->
-      <h1 class="ig-heading">About Me</h1>
+      <!-- Footer -->
 
-      <div class="row bio justify-content-center justify-content-md-start">
-        <div class="col-lg-4">
-          <img class="bio_img" src="images/shannon.jpeg" alt="Shannon Suhendra">
-        </div>
-        <div class="col-lg-8 bio_about">
-          <h6 class="desc-heading">Bio</h6>
-          <p>Hi! I am a sophomore at the University of Pennsylvania, currently pursuing a Bachelor of Science in Engineering
-          (BSE) in computer science. I am interested in web applications and providing computer science education. </p>
-        </div>
-      </div>
+      <footer id="footer">
+          <p class="copyright copyright-hm">Copyright © 2020</p>
+      </footer>
     </div>
-
-  <!-- Footer -->
-
-  <footer id="footer">
-      <p class="copyright">Copyright © 2020</p>
-  </footer>
 
   <script src="js/index.js" charset="utf-8"></script>
 </body>
