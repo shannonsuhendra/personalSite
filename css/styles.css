@@ -16,7 +16,6 @@ p {
 
 a {
   color: #C8E7E8;
-  margin-right: 30px;
 }
 
 a:hover {
@@ -62,6 +61,15 @@ a:hover {
   .bio_about {
     padding-top: 4vh;
   }
+
+  .name {
+    margin-top: 1rem;
+  }
+
+  a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 @media only screen and (min-width: 992px){
@@ -75,6 +83,14 @@ a:hover {
 
   .bio_about {
     padding-top: 2vh;
+  }
+
+  .name {
+    margin-top: 3.5rem;
+  }
+
+  a {
+    margin-right: 30px;
   }
 }
 
@@ -126,9 +142,8 @@ a:hover {
 
 /* Home */
 .name {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #ffffff;
-  margin-top: 1rem;
 }
 
 .desc {
@@ -163,7 +178,6 @@ body#bg-img {
 
 a.github {
   color: #8f8f8f;
-  margin-right: 30px;
 }
 
 a.github:hover {
