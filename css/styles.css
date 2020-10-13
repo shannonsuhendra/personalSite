@@ -14,11 +14,22 @@ p {
   font-size: 1.2rem;
 }
 
+a {
+  color: #C8E7E8;
+  margin-right: 30px;
+}
+
+a:hover {
+  color: #ffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 /* Headings */
 
 .big-heading {
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1.5;
 }
 
@@ -39,7 +50,7 @@ p {
     text-align: center;
   }
   .hamburger {
-    font-size: 2.5rem;
+    font-size: 3rem;
     cursor: pointer;
     align-items: right;
   }
@@ -47,11 +58,23 @@ p {
   .hamburger-hm {
     color: #ffff;
   }
+
+  .bio_about {
+    padding-top: 4vh;
+  }
 }
 
 @media only screen and (min-width: 992px){
   .hamburger {
     display: none;
+  }
+
+  .intro {
+    margin-top: 20vh;
+  }
+
+  .bio_about {
+    padding-top: 2vh;
   }
 }
 
@@ -105,7 +128,7 @@ p {
 .name {
   font-size: 4rem;
   color: #ffffff;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .desc {
@@ -113,29 +136,23 @@ p {
   font-weight: bold;
 }
 
-.intro {
-  margin: 12% 0;
-}
-
 /* About Me */
 .bio {
-  padding-top: 10px;
+  margin-top: 5vh;
 }
 
 .bio_img {
-  width: 250px;
+  width: 270px;
   border-radius: 50%;
-}
-
-.bio_about {
-  padding-top: 15px;
+  margin: auto;
+  display: block;
 }
 
 body#bg-img {
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 /* Projects */
@@ -144,13 +161,13 @@ body#bg-img {
   height: 100%;
 }
 
-a {
-  color: #C8E7E8;
+a.github {
+  color: #8f8f8f;
   margin-right: 30px;
 }
 
-a:hover {
-  color: #ffff;
+a.github:hover {
+  color: #66BFBF;
   background-color: transparent;
   text-decoration: none;
 }
